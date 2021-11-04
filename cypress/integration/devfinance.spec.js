@@ -7,7 +7,7 @@ describe("DevFinace", ()=> {
         cy.get("#date").type('2021-11-04')
         cy.contains('button', 'Salvar').click()
         cy.get('table tbody tr').should('have.length', 1)
-        cy.wait(2000)
+        cy.wait(500)
         cy.get('img[onclick*=remove]').click()
     });
 });
